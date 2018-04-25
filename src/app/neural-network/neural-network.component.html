@@ -1,0 +1,62 @@
+<div class="container pt-0" >
+  <div class="row">
+       <div class="col-sm-3">
+         <div class="card">
+           <div class="card-body">
+ 
+               <h5 class="card-title">Neural Network</h5>
+               <div class="input-group mb-3">
+                   <div class="input-group-prepend">
+                     <span class="input-group-text" id="basic-addon3">f(x)=</span>
+                   </div>
+                   <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" [(ngModel)]="functionExpression">
+                 </div>
+                 <div class="input-group mb-3">
+                     <div class="input-group-prepend">
+                       <span class="input-group-text" id="basic-addon3">x min</span>
+                     </div>
+                     <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"  [(ngModel)]="xMin">
+                 </div>
+                 <div class="input-group mb-3">
+                     <div class="input-group-prepend">
+                       <span class="input-group-text" id="basic-addon3">x max</span>
+                     </div>
+                     <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"  [(ngModel)]="xMax">
+                   </div>
+                 <div class="input-group mb-3">
+                       <div class="input-group-prepend">
+                         <span class="input-group-text" id="basic-addon3">n points</span>
+                       </div>
+                       <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"  [(ngModel)]="nPoints">
+                 </div>
+                 <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon3">m layers</span>
+                  </div>
+                  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"  [(ngModel)]="mLayers">
+                </div>
+                 <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon3">n Epoch</span>
+                  </div>
+                  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"  [(ngModel)]="nEpoch">
+                </div>
+                 <button type="button" class="btn btn-primary" (click)="drawGraph()">Draw</button>
+                 <button type="button" class="btn btn-primary" (click)="nextEpoch()">Next n Epoch</button>
+ 
+                               
+           </div>
+         </div>
+       </div>
+       <div class="col-sm-9">
+         <div class="card">
+           <div class="card-body">
+               <canvas #canvas></canvas>
+           </div>
+         </div>
+       </div>
+     </div>
+ </div> 
+ 
+ 
+    

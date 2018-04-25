@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!--
+<div *ngIf="chart">
+ <canvas id="canvas">{{ chart }}</canvas>
+</div>
+
+<canvas id="canvas"  width="400" height="400" style="width:75%; background-color: '#ffcc00'" ></canvas>
+<canvas #canvas></canvas>
+<div (click)="dd()">ddd</div>
+-->
+
+<app-nav-bar></app-nav-bar>
+<nav>
+    <a routerLink="/graph1D">Graph 1D</a>
+    <a routerLink="/nn">Neural Network</a>
+    <a routerLink="/diffusion">Diffusion</a>
+</nav>
+<router-outlet></router-outlet>
+<app-messages></app-messages>
+
+<!-- <div class="container pt-4" >
+    <app-function-spec></app-function-spec>    
+</div> -->
+
+
