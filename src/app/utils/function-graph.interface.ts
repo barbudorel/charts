@@ -19,5 +19,5 @@ export interface FunctionGraphInterface{
 
 	getMaxY():number;
 	
-	initGf();
+	initGf(): any;
 }

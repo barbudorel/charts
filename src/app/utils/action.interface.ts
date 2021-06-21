@@ -1,6 +1,6 @@
 
 export interface ActionInterface{
-    run();
-    start();
-    stop();
+    run(): any;
+    start(): any;
+    stop(): any;
 }
